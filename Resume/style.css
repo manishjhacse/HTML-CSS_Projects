@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    /* background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #5b1d97 50%, #2B86C5 100%); */
+    background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #7a3d7a 46%, #FFCC70 100%);
+
+
+
+    border: 3px solid black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.box {
+    background-color: #faa8f9;
+    background-image: linear-gradient(19deg, #faa8f9 0%, #DDD6F3 100%);
+   
+    border: 2px solid black;
+    height: 90vh;
+    width: 45%;
+    border-radius: 30px;
+    padding: 15px;
+    overflow: auto;
+}
+
+.name-img {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-content: center;
+    justify-content: space-between;
+
+}
+.contact{
+    color: black;
+    text-decoration: none;
+}
+
+.personal-details {
+    line-height: 1.4;
+    font-weight: bold;
+    text-align: start;
+    font-size: 1.2rem;
+
+}
+
+#name {
+    font-size: 30px;
+}
+
+.image {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+
+@media (max-width:644px) {
+    .box {
+        height: 90vh;
+        width: 80%;
+        border-radius: 20px;
+    }
+
+    .name-img {
+        flex-direction: column-reverse;
+    }
+
+}
+
+section h1 {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: start;
+}
+
+.education {
+    margin: 15px;
+    margin-left: 2px;
+    font-size: 18px;
+    text-align: start;
+}
+
+.education-name {
+    font-weight: bold;
+}
+
+.education-details {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+.skills-info {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 20PX;
+    margin-top: 10PX;
+}
+
+.skill-list {
+    list-style-type: disc;
+    line-height: 1.5;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    
+}
+
+.project-info {
+    height: 250px;
+    width: 250px;
+    border: 2px hidden black;
+    border-radius: 15%;
+    margin: 15px;
+    transition: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+
+}
+
+.project-info:hover {
+    transform: scale(1.25);
+    box-shadow: 10px 10px 15px black;
+    margin: 50px;
+
+}
+
+.project-heading {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.project-image {
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+}
