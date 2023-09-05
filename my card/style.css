@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(100, 43, 115, 1) 0%, rgba(4, 0, 4, 1) 90%);
+
+}
+
+.card-box {
+    height: 200px;
+    width: 400px;
+    margin: 30px;
+    background-color: #43256f;
+    background-image: linear-gradient(225deg, #43256f 0%, #4d236f 50%, #1d4867 100%);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    overflow: hidden;
+    transition: all .5s ease-in-out 0s;
+    box-shadow: 1px 1px 10px rgb(44, 79, 125);
+   
+}
+
+.card-box:hover {
+    height: 400px; 
+}
+.name-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.name-image img {
+    height: 130px;
+    width: 130px;
+    border-radius: 65px;
+    box-shadow: 2px 2px 18px black;
+}
+
+.name-image h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 35px;
+    color: rgb(171, 113, 153);
+    height: 45px;
+    width: 0;
+    overflow: hidden;
+}
+@media(max-width:415px){
+    .name-image h1{
+        font-size: 22px;
+        height: 35px;
+    }
+    .card-box{
+        height: 180px;
+    }
+    .card-box:hover {
+        height: 340px; 
+    }
+    .about{
+        margin-bottom: 0px;
+    }
+    
+}
+
+.name-image h1 {
+    animation: width-increase;
+    animation-duration: .8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-delay: .8s;
+}
+
+@keyframes width-increase {
+    form {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.about {
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    text-align: center;
+    color: wheat;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+@media(max-width:415px){
+    .about{
+        font-size: 16px;
+    }
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons li {
+    list-style: none;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s linear 0s;
+    box-shadow: 2px 2px 10px rgb(53, 32, 32);
+    cursor: pointer;
+}
+
+.icons li a {
+    color: white;
+}
+
+.icon {
+    transition: all .5s ease-in 0s;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+#linkedin:hover {
+    background-color: #1c4584;
+    background-image: linear-gradient(43deg, #1c4584 0%, #5e58a3 46%, #4f45b9 100%);
+
+
+}
+
+#github:hover {
+    background-color: #311616;
+    background-image: linear-gradient(225deg, #311616 0%, #402e4e 50%, #323940 100%);
+
+}
+
+#mail:hover {
+    background-color: #9a4f4f;
+    background-image: linear-gradient(180deg, #9a4f4f 0%, #bf4179 50%, #a11616 100%);
+
+}
+
+#instagram:hover {
+    background-color: #f79e9e;
+    background-image: linear-gradient(90deg, #f79e9e 0%, #bb1c86 100%);
+
+}
+@media(max-width:415px){
+    .icons li {
+        height: 30px;
+        width: 30px;
+    }
+}

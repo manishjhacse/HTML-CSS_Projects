@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    background-color: #5a84ca;
+    background-image: linear-gradient(180deg, #5a84ca 0%, #4e6cc4 50%, #3c2020 100%);
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.car-box{
+    height: 50vh;
+    width: 100vw;
+    position: absolute;
+    animation-name: road-move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+/* @keyframes road-move {
+    from{
+        left:-80%;
+    }
+    to{
+        left: 80%;
+    }
+} */
+span{
+    display: inline-block;
+}
+.base{
+    position: absolute;
+    width: 350px;
+    border: 3px solid black;
+    border-radius: 10px;
+    top: 79.6%;
+    left: 40.2%;
+}
+.top{
+    position: absolute;
+    width: 250px;
+    border: 3px solid black;
+    top: 40%;
+    left:42.9% ; 
+    border-radius: 10px;
+}
+.left{
+    position: absolute;
+    height: 162px;
+    border-radius: 10px;
+    border: 3px solid black;
+    transform: rotate(15deg);
+    top:40%;
+    left: 41.5%; 
+}
+.right{
+    position: absolute;
+    height: 170px;
+    border-radius: 10px;
+    border: 3px solid black;
+    transform: rotate(-20deg);
+    top:38.9%;
+    right: 38.7%; 
+}
+
+.straight{
+    position: absolute;
+    height: 160px;
+    border-radius: 10px;
+    border: 3px solid black;
+    top:40%;
+    right: 40.8%; 
+}
+#wheel1{
+    left: 40%;
+}
+#wheel2 {
+    right: 38%;
+}
+.wheel{
+    position: absolute;
+    height: 76px;
+    width: 76px;
+    border: 4px solid black;
+    border-radius: 50%;
+    bottom: 0%;
+    animation-name:circle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: .5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes circle{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.lines{
+    height: 76px;
+    border: 2px solid black;
+}
+#line1,#line3{
+    transform: rotate(90deg);
+}
+.road{
+    width: 1800PX;
+    height: 50px;
+    background-color: rgba(35, 14, 14, 0.674);
+    position: absolute;
+    bottom: 21%;
+    display: flex;
+    align-items: center;
+   
+}
+.road-line{
+    border-top: dashed yellow 3px;
+    width: 100%;
+}
